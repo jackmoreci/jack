@@ -5,9 +5,16 @@
 </head>
 <body>
 
-<h1>This is Jackson's webpage</h1>
-<p>My website is badass</p>
-<h2>https://upload.wikimedia.org/wikipedia/en/d/d2/Rexy-_the_Jurassic_Park_Tyrannosaurus_rex.png</h2>
+data = {
+    'Student': ['Stef', 'Adam', 'Becca', 'John', 'Jane'],
+    'Week1': ['y', 'y', 'y', 'y', 'n'],
+    'Week2': ['y', 'y', 'y', 'y', 'y'],
+    'Week3': ['y', 'y', 'y', 'n', 'y'],
+    'Week4': ['y', 'n', 'n', 'n', 'y']
+}
+
+df = pd.DataFrame.from_dict(data, orient='columns').set_index('Student')
+df
 
 </body>
 </html>
